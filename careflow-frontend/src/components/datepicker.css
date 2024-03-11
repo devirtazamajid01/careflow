@@ -1,0 +1,72 @@
+.clinic-datepicker-popper .react-datepicker__triangle {
+  stroke: rgba(0, 0, 0, 0.06);
+  fill: #fff;
+}
+
+.clinic-datepicker.react-datepicker {
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.15);
+  overflow: visible; /* allow time column to render */
+  z-index: 50;
+}
+
+.clinic-datepicker .react-datepicker__header {
+  background: linear-gradient(135deg, #ecfeff, #f0fdf4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.clinic-datepicker .react-datepicker__current-month,
+.clinic-datepicker .react-datepicker-time__header {
+  color: #065f46;
+  font-weight: 800;
+}
+
+.clinic-datepicker .react-datepicker__day--selected,
+.clinic-datepicker .react-datepicker__day--keyboard-selected,
+.clinic-datepicker .react-datepicker__time-list-item--selected {
+  background-color: #10b981 !important;
+  color: #fff !important;
+  border-radius: 8px;
+}
+
+.clinic-datepicker .react-datepicker__day:hover,
+.clinic-datepicker .react-datepicker__time-list-item:hover {
+  background-color: #e7f8f1;
+  border-radius: 8px;
+}
+
+/* Custom time list styling */
+.clinic-time-item {
+  border-radius: 8px;
+  margin: 2px 8px;
+  padding: 6px 8px;
+  transition: background-color 120ms ease;
+}
+
+/* Align time column header and scrollbar for cohesion */
+.clinic-datepicker .react-datepicker__time-container {
+  border-left: 1px solid rgba(0, 0, 0, 0.06);
+}
+.clinic-datepicker .react-datepicker__time-list {
+  scrollbar-width: thin;
+}
+
+.clinic-datepicker .react-datepicker__day-name {
+  color: #6b7280;
+  font-weight: 700;
+}
+
+.clinic-datepicker .react-datepicker__today-button {
+  background: #10b981;
+  color: #fff;
+  font-weight: 600;
+}
+
+.clinic-datepicker .react-datepicker__navigation-icon::before {
+  border-color: #10b981;
+}
+
+.clinic-datepicker .react-datepicker__close-icon::after {
+  background: #ef4444;
+}
