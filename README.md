@@ -88,14 +88,13 @@ The seed file (`ruh-backend/db/seeds.rb`) creates example clients and appointmen
 - Date & Time picker with clinic theme
   - Past dates disabled
   - Booked time slots disabled on the selected day
-  - “Today” does not auto-select a time
   - Server-side uniqueness validation ensures no double booking
 - External sync service integration scaffold (with mock API)
 - Pagination
   - Backend: simple pagination helpers and `{ data, meta }` envelope
   - Frontend: 10 per page for clients and appointments with controls
 - Robust error handling and UX
-  - Rails: structured 400/404/422 responses
+  - Rails: structured `400/404/422` responses
   - Frontend: Axios instance + interceptors, toasts for user-friendly messages
 - Polished UI/UX
   - Tailwind-based design, skeleton loaders, accessible modals and forms
@@ -130,4 +129,4 @@ Pagination params: `?page=1&per_page=10`. Responses are wrapped as `{ data: [...
 
 ## License
 
-MIT (for demo purposes)
+MIT
